@@ -16,6 +16,18 @@ $ npm i -g emmeton
 $ emmeton 'src>{index.js}^test>{index.js}^bin>{app.js}'
 ```
 
+which will create files as below:
+
+```
+.
+├── bin
+│   └── app.js
+├── src
+│   └── index.js
+└── test
+    └── index.js
+```
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)

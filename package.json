@@ -1,0 +1,34 @@
+{
+  "name": "emmeton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "bin": {
+    "emmeton": "bin/app.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir lib -w"
+  },
+  "keywords": [
+    "emmet",
+    "parser"
+  ],
+  "files": [
+    "lib",
+    "*.md"
+  ],
+  "author": "jasonHzq",
+  "license": "MIT",
+  "dependencies": {
+    "emmet": "^1.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0"
+  }
+}

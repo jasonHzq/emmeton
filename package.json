@@ -18,6 +18,7 @@
     "parser"
   ],
   "files": [
+    "bin",
     "lib",
     "*.md"
   ],

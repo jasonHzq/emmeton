@@ -1,6 +1,6 @@
 # emmeton
 
-Enable you create files like emmet!
+Enable you create files using emmet!
 
 [![npm version](https://badge.fury.io/js/emmeton.png)](https://badge.fury.io/js/emmeton)
 [![build status](https://travis-ci.org/jasonHzq/emmeton.svg)](https://travis-ci.org/jasonHzq/emmeton)

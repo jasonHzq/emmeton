@@ -13,7 +13,7 @@ const traverseAst = (tree) => {
   }
 
   if (tree.abbreviation) {
-    commands.push(`mkdir ${tree.abbreviation}`);
+    commands.push(`_mkdir ${tree.abbreviation}`);
   }
 
   if (tree.children && tree.children.length) {
@@ -56,13 +56,20 @@ const showTree = (tree, depth = 0) => {
   return lines;
 };
 
+const mkcdir = `
+  _mkdir ()
+  {
+      mkdir -p -- "$1"
+  }
+`;
+
 export default (code) => {
   const emmetTree = abbreviationParser.parse(code);
   const commands = traverseAst(emmetTree).join(' && ');
 
   console.log('the tree you will create:');
   showTree(emmetTree).forEach(line => console.log(line));
-  execSync(commands);
+  execSync(mkcdir + commands);
 
   console.log('create successful!');
 }
